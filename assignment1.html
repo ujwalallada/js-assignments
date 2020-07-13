@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <h2>This is my First Assignment!!!!</h2>
+    </head> 
+        <body>
+            <script>
+                var today = new Date();
+                var day =today.getDay();
+                var list=["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"]; 
+                document.write("Today is : "+list[day]);
+                var hour = today.getHours();
+                var min = today.getMinutes();
+                var sec = today.getSeconds();
+                var meri = (hour>12) ? "PM" : "AM";
+                var x= hour-12
+                document.write("<br>");
+                document.write("Current time is : " + x + " " +meri +":"+min + ":" + sec);
+
+            </script>
+        </body>
+</html>

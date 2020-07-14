@@ -1,0 +1,96 @@
+<!--Quetion 1)Various forms of console methods -->
+
+// console.log
+<br>
+console.log("Hey this is Ujwal!!!");
+<br>
+<br>
+// console.error()
+<br> 
+console.error("O shit!!! This is error");
+<br>
+<br>
+// console.warn()
+<br>   
+console.warn("Warning!!!!!!");
+<br>
+<br>
+// console.clear()
+<br>   
+console.clear();
+<br> 
+<br>   
+// console.time() and console.timeEnd() method
+<br>
+<br>  
+console.time('abc'); 
+ let fun =  function(){ 
+     console.log('fun is running'); 
+ } 
+ let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+ } 
+ fun(); // calling fun(); 
+ fun2(); // calling fun2(); 
+console.timeEnd('abc'); 
+<br>
+<br>
+// console.table() method 
+<br>
+console.table({'a':1, 'b':2});
+<br>
+<br>
+// console.count() method 
+<br>
+<!--for(let i=0;i<5;i++){ 
+    console.count(i); -->
+<br>
+<br>
+// console.group() and console.groupEnd() method 
+console.group("Group"); 
+  console.warn("warning!!!!""); 
+  console.error("Error"); 
+  console.log("Hello ths needs to be printed between!!"); 
+console.groupEnd("Group"); 
+
+<!--Quetion 2)Difference between  
+//What is Var,let and const?
+Var creates function scoped variables whereas let and const create block scoped variables
+for eg:
+function start(){
+    for(let i=0;i<5;i++)
+    {
+        console.log(i);
+    }
+    console.log(i);  //This will give an error in the output!!! since let is block scoped and cannot be accecesed outside the block
+}
+function start(){
+    for(var i=0;i<5;i++)
+    {
+        console.log(i);
+    }
+    console.log(i);//This will print the value of i as 5 since this is declared as global variable.
+}
+var x=10//Here the value is 10
+{
+    const x=2;//here the value is 2 since it is block scoped
+} -->
+
+<!--Quetion 3)Type of data types in javascript
+String,Number and Boolean are Primitive data type
+Object,Array and Function are composite data type
+Undefined and Null are special data type -->
+Var a="This is String"                                        //String data type
+Var x=24                                                      //Number data type
+Var isBoolean=true                                            //Boolean data type
+alert(16/0)                                                   //NaN
+var car = {
+    "modal": "BMW X3",
+    "color": "white",
+    "doors": 5
+}                                                            //object data type
+var languages=["C","C++","Java"];                            //Array data type
+function hello()
+{
+    document.write("Ths is Function");                       //Function data type
+}
